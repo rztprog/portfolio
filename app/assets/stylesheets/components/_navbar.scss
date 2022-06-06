@@ -1,12 +1,30 @@
 .navbar {
   // display: flex;
   // justify-content: space-between;
-  background: red;
+  // background: red;
 }
 
 .navbar-list {
   display: flex;
-  background-color: blue;
+  // background-color: blue;
+  justify-content: center;
+  margin: 0 15px;
+  list-style-type: none;
+  padding: 15px;
+  border-bottom: 1px solid $red;
+}
+
+.navbar-list li{
+  margin: 0 10px;
+  // background-color: yellow;
+  a {
+    color: $red;
+    text-decoration: none;
+
+    &:hover{
+      color: $blue;
+    }
+  }
 }
 
 // .navbar-lewagon .navbar-collapse {
