@@ -1,12 +1,18 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  // display: flex;
+  // justify-content: space-between;
+  background: red;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar-list {
+  display: flex;
+  background-color: blue;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+//   }
+  
+//   .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+//   }
