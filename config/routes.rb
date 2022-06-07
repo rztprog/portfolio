@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   root to: "pages#index"
 
+  resources :blogs, only: [:show, :create, :new, :edit, :update, :destroy]
 end
