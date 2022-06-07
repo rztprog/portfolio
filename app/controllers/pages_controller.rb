@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   def index
   end
 
-  def blog
-    @test = "test"
+  def contact
   end
 end
