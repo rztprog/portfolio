@@ -1,13 +1,9 @@
 .navbar {
-  // display: flex;
-  // justify-content: space-between;
-  // background: red;
   font-family: 'Poppins', sans-serif;
 }
 
 .navbar-list {
   display: flex;
-  // background-color: blue;
   justify-content: center;
   margin: 0 15px;
   list-style-type: none;
@@ -17,7 +13,6 @@
 
 .navbar-list li{
   margin: 0 10px;
-  // background-color: yellow;
   a {
     color: $red;
     text-decoration: none;
@@ -29,11 +24,3 @@
     }
   }
 }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-//   }
-  
-//   .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-//   }

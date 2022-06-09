@@ -13,7 +13,7 @@ class BlogsController < ApplicationController
     # @list.user = current_user
     # authorize @list
 
-    if @list.save
+    if @blog.save
       redirect_to blog_path(@blog)
     else
       render :new
