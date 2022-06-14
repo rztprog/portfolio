@@ -6,3 +6,43 @@
   margin: 15px auto 0 auto;
   width: 90%;
 }
+
+.blog-grid-index{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px 15px;
+  color: black;
+
+  a{
+    color: yellow;
+    text-decoration: none;
+  }
+}
+
+.blog-card{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.blog-nav{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.add-button{
+  background-color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.search-form{
+
+}
+
