@@ -1,10 +1,9 @@
 // Specific CSS for your home-page
-// Add font everywhere
+// Background and font
 body{
   height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: #7d322f;
-  background: -moz-linear-gradient(top, #7d322f 0%, #35171E 50%, #080D11 100%);
-  background: -webkit-linear-gradient(top, #7d322f 0%, #35171E 50%, #080D11 100%);
-  background: linear-gradient(to bottom, #7d322f 0%, #35171E 50%, #080D11 100%);
+  background: -moz-linear-gradient(top, #7d322f 0%, #35171E 30%, #080D11 90%);
+  background: -webkit-linear-gradient(top, #7d322f 0%, #35171E 30%, #080D11 90%);
 }

@@ -22,12 +22,13 @@
 .blog-card{
   width: 100%;
   aspect-ratio: 1 / 1;
-  background-color: lightgray;
+  background-color: #0d0d15;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color: #000;
+  color: cyan;
+  border: 2px solid #671517;
 }
 
 .blog-nav{
@@ -47,7 +48,7 @@
 
 .search-form{
   display: flex;
-  
+
   input{
     background: rgba($color: #000000, $alpha: 0);
     width: 100%;
@@ -56,7 +57,7 @@
     outline: none;
     border-right: none;
     padding: 5px;
-    color: #000;
+    color: lightgray;
   }
 }
 
