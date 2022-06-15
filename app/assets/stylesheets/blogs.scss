@@ -2,7 +2,80 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .container{
-  background-color: rgb(94, 94, 215);
+  // background-color: rgb(94, 94, 215);
   margin: 15px auto 0 auto;
   width: 90%;
+}
+
+.blog-grid-index{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px 15px;
+  color: black;
+
+  a{
+    // color: yellow;
+    text-decoration: none;
+  }
+}
+
+.blog-card{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #0d0d15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: cyan;
+  border: 2px solid $darkred;
+
+  &:hover{
+  border: 2px solid $lightcyan;
+  }
+}
+
+.blog-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-button{
+  background-color: lightgray;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #000;
+}
+
+.search-form{
+  display: flex;
+
+  input{
+    background: rgba($color: black, $alpha: 0);
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    border: 3px solid $lightred;
+    outline: none;
+    border-right: none;
+    padding: 5px;
+    color: lightgray;
+  }
+}
+
+.search-button{
+  width: 46px;
+  height: 36px;
+  border: 1px solid $lightred;
+  background: $lightred;
+  color: #000;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 15px;
+
+  &:hover{
+    font-size: 20px;
+  }
 }

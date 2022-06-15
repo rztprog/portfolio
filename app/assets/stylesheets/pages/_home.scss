@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+// Background and font
+body{
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: $darkred;
+  background: -webkit-linear-gradient(top, #552120 0%, #35171E 30%, #080D11 80%);
+  background: -moz-linear-gradient(top, #552120 0%, #35171E 30%, #080D11 80%);
+  background:      -o-linear-gradient(top, #552120 0%, #35171E 30%, #080D11 80%); /* Opera 11.10-12.00 */
+  background: linear-gradient(to bottom, #552120 0%, #35171E 30%, #080D11 80%);
+}
