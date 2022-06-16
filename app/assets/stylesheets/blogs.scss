@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .container{
-  // background-color: rgb(94, 94, 215);
   margin: 15px auto 0 auto;
   width: 90%;
 }
@@ -14,7 +13,6 @@
   color: black;
 
   a{
-    // color: yellow;
     text-decoration: none;
   }
 }
@@ -32,7 +30,7 @@
   color: cyan;
 
   &:hover{
-    background: $lightcyan;
+    background-color: $lightcyan;
   }
 }
 
@@ -59,9 +57,20 @@
   background-color: lightgray;
   padding: 5px 15px;
   text-decoration: none;
-  border-radius: 5px;
   color: #000;
+  border: 1px solid $darkred;
+
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
 }
+
+// .add-button{
+//   background-color: lightgray;
+//   padding: 5px 15px;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   color: #000;
+// }
 
 .search-form{
   display: flex;
