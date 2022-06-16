@@ -15,7 +15,8 @@
   <div class="blog-grid-index">
     <% @blogs.each do |blog| %>
       <%= link_to blog_path(blog) do %>
-        <div class="blog-card-border">
+        <div class="blog-card-border"   
+        data-aos="fade-down">
           <div class="blog-card">
             <p><%= blog.title %></p>
           </div>
@@ -24,3 +25,8 @@
     <% end %>
   </div>
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
