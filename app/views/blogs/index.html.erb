@@ -15,8 +15,10 @@
   <div class="blog-grid-index">
     <% @blogs.each do |blog| %>
       <%= link_to blog_path(blog) do %>
-        <div class="blog-card">
-          <p><%= blog.title %></p>
+        <div class="blog-card-border">
+          <div class="blog-card">
+            <p><%= blog.title %></p>
+          </div>
         </div>
       <% end %>
     <% end %>

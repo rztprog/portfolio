@@ -19,20 +19,33 @@
   }
 }
 
-.blog-card{
+// I use another parent div to simulate a border with clip-path
+.blog-card-border{
   width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: $darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+  color: cyan;
+
+  &:hover{
+    background: $lightcyan;
+  }
+}
+
+.blog-card{
+  width: 99%;
   aspect-ratio: 1 / 1;
   background-color: #0d0d15;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
   color: cyan;
-  border: 2px solid $darkred;
-
-  &:hover{
-  border: 2px solid $lightcyan;
-  }
 }
 
 .blog-nav{
