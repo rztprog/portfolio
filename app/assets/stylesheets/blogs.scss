@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .container{
-  // background-color: rgb(94, 94, 215);
   margin: 15px auto 0 auto;
   width: 90%;
 }
@@ -14,25 +13,37 @@
   color: black;
 
   a{
-    // color: yellow;
     text-decoration: none;
   }
 }
 
-.blog-card{
+// I use another parent div to simulate a border with clip-path
+.blog-card-border{
   width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: $darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+  color: cyan;
+
+  &:hover{
+    background-color: $lightcyan;
+  }
+}
+
+.blog-card{
+  width: 99%;
   aspect-ratio: 1 / 1;
   background-color: #0d0d15;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
   color: cyan;
-  border: 2px solid $darkred;
-
-  &:hover{
-  border: 2px solid $lightcyan;
-  }
 }
 
 .blog-nav{
@@ -46,9 +57,20 @@
   background-color: lightgray;
   padding: 5px 15px;
   text-decoration: none;
-  border-radius: 5px;
   color: #000;
+  border: 1px solid $darkred;
+
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
 }
+
+// .add-button{
+//   background-color: lightgray;
+//   padding: 5px 15px;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   color: #000;
+// }
 
 .search-form{
   display: flex;
