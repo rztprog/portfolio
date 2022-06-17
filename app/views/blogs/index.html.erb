@@ -12,11 +12,11 @@
     <%= link_to "+ADD", new_blog_path, class: "add-button" %>
   </div>
 
-  <div class="blog-grid-index">
+  <div class="blog-grid-index" data-aos="fade-down">
     <% @blogs.each do |blog| %>
       <%= link_to blog_path(blog) do %>
         <div class="blog-card-border"   
-        data-aos="fade-down">
+        ">
           <div class="blog-card">
             <p><%= blog.title %></p>
           </div>

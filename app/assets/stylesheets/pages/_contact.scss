@@ -1,0 +1,25 @@
+.social-h2,
+.social-list{
+  margin-top: 30px;
+}
+
+.contact-container{
+  color: #fff;
+  margin: 30px auto 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.social-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-contact{
+  list-style-type: none;
+}
+
+.social-contact-link{
+  padding: 20px;
+  background-color: yellow;
+}
