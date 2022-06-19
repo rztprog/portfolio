@@ -38,6 +38,15 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # OWN CONFIG
+  config.action_mailer.delivery_method = :smtp
+  # Default SMTP
+  # config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
+  config.action_mailer.smtp_settings = { :address => '192.168.1.62', :port => 1025 }
+  # Add http settings test
+  # config.action_mailer.http_settings = { :address => '192.168.1.62', :port => 1080 }
+  config.action_mailer.raise_delivery_errors = false
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
