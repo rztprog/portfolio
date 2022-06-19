@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root to: "pages#index"
   get "contact", to: "pages#contact"
+  
+  resources :contacts, only: [:new, :create]
 
   resources :blogs, only: [:index, :show, :create, :new, :edit, :update, :destroy]
 end
