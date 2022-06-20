@@ -4,3 +4,34 @@
 .d-none-field{
   display: none;
 }
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+}
+.send-button,
+.contact-form-input,
+.contact-form-textarea{
+  width: 100%;
+}
+
+.contact-form-input,
+.contact-form-textarea{
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0);
+  color: $light-gray;
+
+  border: none;
+  border-bottom: 2px solid $light-gray;
+  
+  padding: 15px 0;
+  margin-bottom: 10px;
+}
+
+.contact-form-textarea{
+  resize: none;
+}
+
+.send-button{
+ 
+}
