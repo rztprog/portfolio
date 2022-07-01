@@ -11,5 +11,10 @@ body{
 }
 
 .rztprog-cyber{
-  font-family: 'cyberpunkregular';
+  font-family: $cyberpunk;
+  letter-spacing: -10px;
+
+  color: white;
+  text-align: center;
+  font-size: 80px;
 }
