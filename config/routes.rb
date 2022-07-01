@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root to: "pages#index"
 
-  
+  resources :works, only: [:index]
 
   resources :contacts, only: [:new, :create]
 
