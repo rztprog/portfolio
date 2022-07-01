@@ -1,4 +1,6 @@
 class ContactsController < ApplicationController
+  add_flash_types :info, :error, :warning
+
   def new
     @contact = Contact.new
   end
@@ -9,7 +11,7 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:success] = 'Message sent!'
     else
-      flash.now[:error] = 'Could not send message'
+      flash.now[:error] = 'Could not send message !'
       render :new
     end
   end

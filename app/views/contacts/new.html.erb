@@ -9,6 +9,10 @@
 
   <h2 class="social-h2">OR</h2>
 
+  <% flash.each do |key, message| %>
+    <p class="alert-contact alert-<%= key %>"><%= message %></p>
+  <% end %>
+
   <%= form_for @contact do |f| %>
     <div class="contact-form">
       <!-- <%= f.label :name %> -->
