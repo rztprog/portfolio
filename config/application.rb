@@ -20,3 +20,6 @@ module Portfolio
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+
+config.assets.enabled = true  
+config.assets.paths << "#{Rails.root}/app/assets/fonts"
