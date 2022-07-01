@@ -7,13 +7,13 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 
 @font-face {
   font-family: 'cyberpunkregular';
-  src: url('cyberpunk-regular-webfont.woff2') format('woff2'),
-       url('cyberpunk-regular-webfont.woff') format('woff');
+  src:  url('/assets/cyberpunk-regular-webfont.woff2') format('woff2'),
+        url('/assets/cyberpunk-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-$cyberpunk: "cyberpunkregular";
+$cyberpunk: 'cyberpunkregular', "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
