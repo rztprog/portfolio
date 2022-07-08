@@ -5,6 +5,16 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 
+@font-face {
+  font-family: 'cyberpunkregular';
+  src:  url('/assets/cyberpunk-regular-webfont.woff2') format('woff2'),
+        url('/assets/cyberpunk-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$cyberpunk: 'cyberpunkregular', "Helvetica", "sans-serif";
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

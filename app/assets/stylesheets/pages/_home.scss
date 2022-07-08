@@ -9,3 +9,12 @@ body{
   background: -o-linear-gradient(top, #552120 0%, #35171E 30%, #080D11 80%); /* Opera 11.10-12.00 */
   background: linear-gradient(to bottom, #552120 0%, #35171E 30%, #080D11 80%);
 }
+
+.rztprog-cyber{
+  font-family: $cyberpunk;
+  letter-spacing: -10px;
+
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
