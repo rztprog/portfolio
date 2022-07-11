@@ -1,7 +1,8 @@
 // Specific CSS for your home-page
 // Background and font
-body{
+.body{
   height: 100vh;
+  width: 100vw;
   font-family: 'Poppins', sans-serif;
   background: $darkred;
   background: -webkit-linear-gradient(top, #552120 0%, #35171E 30%, #080D11 80%);
@@ -17,4 +18,9 @@ body{
   color: white;
   text-align: center;
   font-size: 80px;
+}
+
+.bg-dots{
+
+  
 }

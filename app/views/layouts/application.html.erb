@@ -17,15 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
   </head>
 
-  <body>
+  <body class="body">
     <%= render "shared/navbar" %>
-    <div class="container">
     <!--
+    <div class="container">
       <% flash.each do |key, message| %>
         <p class="alert alert-<%= key %>"><%= message %></p>
       <% end %>
-    -->
     </div>
+    -->
     <%= yield %>
+    <ul class="bg-dots">
+      <li></li>
+	  </ul>
   </body>
 </html>

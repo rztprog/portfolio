@@ -1,9 +1,11 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box; // Retiré si ça bug
 }
 
 // No top corner rails result
+// Dev only
 .profiler-results {
   display: none;
 }
