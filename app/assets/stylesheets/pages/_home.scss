@@ -30,15 +30,17 @@
 	z-index: -1;
 	
 	li{
+    $orb-opacity: 0.6;
 		position: absolute;
 		display: block;
     list-style-type: none;
 		width: 2px;
 		height: 2px;
-		background-color: #fff;
+		background-color: rgba($color: #fff, $alpha: $orb-opacity);
 		bottom: 30px;
     border-radius: 50%;
-    box-shadow: 0px 0px 6px 1px #fff;
+    box-shadow: 0px 0px 6px 1px rgba($color: #fff, $alpha: $orb-opacity);
+
 
 		-webkit-animation: move 25s infinite;
 		animation:         move 25s infinite;
@@ -104,7 +106,12 @@
 	}
 }
 
+@-webkit-keyframes move{
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-110vh); }
+}
+
 @keyframes move{
   0%   { transform: translateY(0); }
-  100% { transform: translateY(-105vh); }
+  100% { transform: translateY(-110vh); }
 }
