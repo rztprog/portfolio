@@ -18,17 +18,15 @@
   </head>
 
   <body class="body">
-    <div class="wrapper">
-      <%= render "shared/navbar" %>
-      <%= render "shared/animated-background" %>
-      <%= yield %>
-      <!--
-      <div class="container">
-        <% flash.each do |key, message| %>
-          <p class="alert alert-<%= key %>"><%= message %></p>
-        <% end %>
-      </div>
-      -->
+    <%= render "shared/navbar" %>
+    <%= render "shared/animated-background" %>
+    <%= yield %>
+    <!--
+    <div class="container">
+      <% flash.each do |key, message| %>
+        <p class="alert alert-<%= key %>"><%= message %></p>
+      <% end %>
     </div>
+    -->
   </body>
 </html>
