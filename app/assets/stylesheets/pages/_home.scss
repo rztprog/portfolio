@@ -24,10 +24,10 @@
 
 .wrapper{
     // Animated background
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    // position: absolute;
+    // width: 100vw;
+    // height: 100vh;
+    // overflow: hidden;
 }
 
 .bg-dots{
@@ -48,11 +48,11 @@
 		background-color: #fff;
 		bottom: -160px;
 		
-		-webkit-animation: square 25s infinite;
-		animation:         square 25s infinite;
+		-webkit-animation: move 25s infinite;
+		animation:         move 25s infinite;
 		
-		-webkit-transition-timing-function: linear;
-		transition-timing-function: linear;
+		-webkit-transition-timing-function: ease-in;
+		transition-timing-function: ease-in;
 		
 		&:nth-child(1){
 			left: 10%;
@@ -133,7 +133,7 @@
 	}
 }
 
-@keyframes square {
+@keyframes move{
   0%   { transform: translateY(0); }
   100% { transform: translateY(-1200px); }
 }
