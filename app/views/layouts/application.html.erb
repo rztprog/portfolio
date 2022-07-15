@@ -17,15 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
   </head>
 
-  <body>
+  <body class="body">
     <%= render "shared/navbar" %>
-    <div class="container">
+    <%= render "shared/animated-background" %>
+    <%= yield %>
     <!--
+    <div class="container">
       <% flash.each do |key, message| %>
         <p class="alert alert-<%= key %>"><%= message %></p>
       <% end %>
-    -->
     </div>
-    <%= yield %>
+    -->
   </body>
 </html>
