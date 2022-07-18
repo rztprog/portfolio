@@ -16,15 +16,15 @@
   <%= form_for @contact do |f| %>
     <div class="contact-form">
       <!-- <%= f.label :name %> -->
-      <%= f.text_field  :name, required: true, class: ".contact-form-field", 
+      <%= f.text_field  :name, required: true, class: "contact-form-field", 
                         placeholder: "Name" %>
 
       <!-- <%= f.label :email %> -->
-      <%= f.text_field :email, required: true, class: ".contact-form-field",  
+      <%= f.text_field :email, required: true, class: "contact-form-field",  
                         placeholder: "Email"%>
 
       <!-- <%= f.label :message %> -->
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: ".contact-form-field", 
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-field", 
                       placeholder: "Message"%>
 
       <!-- Anti B0ts -->
