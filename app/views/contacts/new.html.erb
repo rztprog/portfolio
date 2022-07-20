@@ -14,18 +14,24 @@
   <% end %>
 
   <%= form_for @contact do |f| %>
-    <div class="contact-form">
-      <!-- <%= f.label :name %> -->
-      <%= f.text_field  :name, required: true, class: "contact-form-field", 
-                        placeholder: "Name" %>
+    <ul class="contact-form-list">
+      <li class="input-wrapper">
+        <!-- <%= f.label :name %> -->
+        <%= f.text_field  :name, required: true, class: "contact-form-field", 
+                          placeholder: "Name" %>      
+      </li>
 
+      <li class="input-wrapper">
       <!-- <%= f.label :email %> -->
       <%= f.text_field :email, required: true, class: "contact-form-field",  
                         placeholder: "Email"%>
+      </li>
 
+      <li class="input-wrapper-textarea">
       <!-- <%= f.label :message %> -->
       <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-field", 
                       placeholder: "Message"%>
+      </li>
 
       <!-- Anti B0ts -->
       <div class= "b0t-display">
