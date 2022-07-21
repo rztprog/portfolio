@@ -1,3 +1,5 @@
+$random: random(10);
+
 .bg-dots{
 	position: absolute;
 	width: 100%;
@@ -33,7 +35,7 @@
 		
 		&:nth-child(3){
 			left: 25%;
-			animation-delay: 4s;
+			animation-delay: -12s;
 		}
 		
 		&:nth-child(4){
@@ -63,7 +65,7 @@
 		
 		&:nth-child(9){
 			left: 15%;
-			animation-delay: 2s;
+			animation-delay: -8s;
 			animation-duration: 40s;
 		}
 		
@@ -98,7 +100,7 @@
     &:nth-child(15){
 			left: 68%;
       animation-duration: 16s;
-			animation-delay: 6s;
+			animation-delay: -4s;
 		}
 	}
 }
