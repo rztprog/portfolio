@@ -77,6 +77,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    autoprefixer-rails (10.4.16.0)
+      execjs (~> 2)
     base64 (0.2.0)
     bigdecimal (3.1.7)
     bindex (0.8.1)
@@ -101,6 +103,10 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.12.0)
+    execjs (2.9.1)
+    ffi (1.16.3)
+    font-awesome-sass (6.5.1)
+      sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.4)
@@ -203,6 +209,8 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.6)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.18.1)
       base64 (~> 0.2)
       rexml (~> 3.2, >= 3.2.5)
@@ -255,16 +263,18 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  autoprefixer-rails (~> 10.4, >= 10.4.16.0)
   bootsnap
   capybara
   debug
+  font-awesome-sass (~> 6.5, >= 6.5.1)
   importmap-rails
   jbuilder
-  puma (>= 5.0)
-  rails (~> 7.1.3, >= 7.1.3.2)
+  puma (~> 6.4, >= 6.4.2)
+  rails (~> 7.1, >= 7.1.3.2)
   selenium-webdriver
-  sprockets-rails
-  sqlite3 (~> 1.4)
+  sprockets-rails (~> 3.4, >= 3.4.2)
+  sqlite3 (~> 1.7, >= 1.7.3)
   stimulus-rails
   turbo-rails
   tzinfo-data
