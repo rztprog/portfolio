@@ -1,0 +1,31 @@
+.navbar{
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+}
+  
+.navbar-list{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.redline{
+  border-bottom: 1px solid rgb(193, 68, 68);
+  box-shadow: 0px 1px 5px 1px rgba(193, 68, 68, 0.5);
+  // -webkit-box-shadow: 0px 0px 30px 5px rgba(212,75,75,1);
+  // -moz-box-shadow: 0px 0px 30px 5px rgba(212,75,75,1);
+}
+
+.navbar-list li{
+  margin: 0 10px;
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #5DF5FF;
+  }
+}

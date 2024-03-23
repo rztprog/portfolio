@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ /* My CSS Partials */
+@import "config/*";
+@import "components/*";
+@import "pages/*";
+// @import "pages";
+// @import "blogs";
+// @import "contacts";
+// @import "works";
