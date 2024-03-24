@@ -9,7 +9,6 @@ gem 'sass-rails', '~> 6.0'
 gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3'
 gem 'mini_racer', '~> 0.8.0' # Moteur JS
 gem 'simple_form', '~> 5.3'
-gem 'webpacker'
 # gem 'dartsass-rails', '~> 0.5.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
