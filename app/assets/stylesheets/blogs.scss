@@ -1,40 +1,37 @@
-// Place all the styles related to the blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
 .container{
     margin: 30px auto 0 auto;
     width: 90%;
-  }
-  
-  .blog-grid-index{
+}
+
+.blog-grid-index{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px 15px;
     color: black;
-  
+
     a{
-      text-decoration: none;
+        text-decoration: none;
     }
-  }
-  
-  // I use another parent div to simulate a border with clip-path
-  .blog-card-border{
+}
+
+// I use another parent div to simulate a border with clip-path
+.blog-card-border{
     width: 100%;
     aspect-ratio: 1 / 1;
-    background-color: #350000;
+    background-color: rgb(193, 68, 68);
     display: flex;
     justify-content: center;
     align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     color: cyan;
-  
+
     &:hover{
-      background-color: #5DF5FF;
+        background-color: #5DF5FF;
     }
-  }
-  
-  .blog-card{
+}
+
+.blog-card{
     width: 99%;
     aspect-ratio: 1 / 1;
     background-color: #0d0d15;
@@ -44,50 +41,50 @@
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     color: cyan;
-  }
-  
-  .blog-nav{
+}
+
+.blog-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-  }
-  
-  .add-button{
+}
+
+.add-button{
     background-color: lightgray;
     padding: 5px 15px;
     text-decoration: none;
     color: #000;
     border: 1px solid #350000;
-  
+
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
-  }
-  
-  // .add-button{
-  //   background-color: lightgray;
-  //   padding: 5px 15px;
-  //   text-decoration: none;
-  //   border-radius: 5px;
-  //   color: #000;
-  // }
-  
-  .search-form{
+}
+
+// .add-button{
+//   background-color: lightgray;
+//   padding: 5px 15px;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   color: #000;
+// }
+
+.search-form{
     display: flex;
-  
+
     input{
-      background: rgba($color: black, $alpha: 0);
-      width: 100%;
-      border-radius: 5px 0 0 5px;
-      border: 3px solid #D34148;
-      outline: none;
-      border-right: none;
-      padding: 5px;
-      color: lightgray;
+        background: rgba($color: black, $alpha: 0);
+        width: 100%;
+        border-radius: 5px 0 0 5px;
+        border: 3px solid #D34148;
+        outline: none;
+        border-right: none;
+        padding: 5px;
+        color: lightgray;
     }
-  }
-  
-  .search-button{
+}
+
+.search-button{
     width: 46px;
     height: 36px;
     border: 1px solid #D34148;
@@ -96,12 +93,12 @@
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 15px;
-  
+
     &:hover{
-      font-size: 20px;
+        font-size: 20px;
     }
-  }
-  
-  .blog-part{
+    }
+
+    .blog-part{
     display: flex;
-  }
+}
