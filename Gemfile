@@ -7,6 +7,7 @@ gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.16.0'
 gem 'font-awesome-sass', '~> 6.5', '>= 6.5.1'
 gem 'sass-rails', '~> 6.0'
 gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3'
+gem 'mini_racer', '~> 0.8.0' # Moteur JS
 # gem 'dartsass-rails', '~> 0.5.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
