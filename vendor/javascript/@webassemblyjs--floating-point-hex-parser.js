@@ -1,0 +1,2 @@
+var e={};Object.defineProperty(e,"__esModule",{value:true});e.default=parse;function parse(e){e=e.toUpperCase();var r=e.indexOf("P");var t,a;if(-1!==r){t=e.substring(0,r);a=parseInt(e.substring(r+1))}else{t=e;a=0}var s=t.indexOf(".");if(-1!==s){var n=parseInt(t.substring(0,s),16);var p=Math.sign(n);n*=p;var i=t.length-s-1;var u=parseInt(t.substring(s+1),16);var o=i>0?u/Math.pow(16,i):0;t=0===p?0===o?p:Object.is(p,-0)?-o:o:p*(n+o)}else t=parseInt(t,16);return t*(-1!==r?Math.pow(2,a):1)}const r=e.__esModule;export default e;export{r as __esModule};
+
