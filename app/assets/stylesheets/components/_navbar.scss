@@ -29,3 +29,20 @@
     color: #5DF5FF;
   }
 }
+
+.current-list{
+  position: relative;
+  text-decoration: none;
+  color: black;
+
+  &:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+  }
+
+}
