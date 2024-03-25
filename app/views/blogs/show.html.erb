@@ -1,8 +1,11 @@
 <div class="container">
-  <div class="blog-part">
-    <%= @blog.image %>
-    <%= @blog %>
-    <%= @blog.post %>
+  <section class="blog-header">
+      <p><%= @blog.title %></p>
+  </section>
+  <div class="credit">
+    <p>By USER posted <%= @blog.created_at %></p>
   </div>
-  <%= controller_name %>
+  <article class="blog-post">
+    <%= @blog.post %>
+  </article>
 </div>

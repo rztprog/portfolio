@@ -1,9 +1,11 @@
 .container{
     margin: 30px auto 0 auto;
     width: 90%;
+    color: white;
 }
 
-.blog-grid-index{
+// Index
+.blogs-grid-index{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px 15px;
@@ -15,7 +17,7 @@
 }
 
 // I use another parent div to simulate a border with clip-path
-.blog-card-border{
+.blogs-card-border{
     width: 100%;
     aspect-ratio: 1 / 1;
     background-color: rgb(193, 68, 68);
@@ -31,7 +33,7 @@
     }
 }
 
-.blog-card{
+.blogs-card{
     width: 99%;
     aspect-ratio: 1 / 1;
     background-color: #0d0d15;
@@ -43,14 +45,14 @@
     color: cyan;
 }
 
-.blog-nav{
+.blogs-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.add-button{
+.add-blogs-button{
     background-color: lightgray;
     padding: 5px 15px;
     text-decoration: none;
@@ -61,15 +63,7 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
 }
 
-// .add-button{
-//   background-color: lightgray;
-//   padding: 5px 15px;
-//   text-decoration: none;
-//   border-radius: 5px;
-//   color: #000;
-// }
-
-.search-form{
+.search-blogs-form{
     display: flex;
 
     input{
@@ -84,7 +78,7 @@
     }
 }
 
-.search-button{
+.search-blogs-button{
     width: 46px;
     height: 36px;
     border: 1px solid #D34148;
@@ -99,6 +93,36 @@
     }
     }
 
-    .blog-part{
+    .blogs-part{
     display: flex;
 }
+
+// Show
+.blog-header,
+.credit,
+.blog-post{
+    padding: 5px;
+}
+
+.blog-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+    height: 250px;
+    background-color: #ffffff11;
+    
+}
+
+.credit{
+    color: rgb(138, 138, 138);
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blog-post{
+    margin-top: 30px;
+}
+
+
