@@ -1,2 +1,0 @@
-import r from"path";var t={};var e=r;t=function(r,t){if(t)var a=t.map((function(t){return e.resolve(r,t)}));else var a=r;var i=a.slice(1).reduce((function(r,t){if(!t.match(/^([A-Za-z]:)?\/|\\/))throw new Error("relative path without a basedir");var e=t.split(/\/+|\\+/);for(var a=0;r[a]===e[a]&&a<Math.min(r.length,e.length);a++);return r.slice(0,a)}),a[0].split(/\/+|\\+/));return i.length>1?i.join("/"):"/"};var a=t;export default a;
-

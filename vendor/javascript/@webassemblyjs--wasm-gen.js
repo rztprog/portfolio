@@ -1,1 +1,0 @@
-import"@webassemblyjs/leb128";import"@webassemblyjs/ieee754";import"@webassemblyjs/utf8";import"@webassemblyjs/helper-wasm-bytecode";import{d as e}from"../_/58108164.js";export{d as __dew}from"../_/58108164.js";const s=e();var o=s.__esModule,m=s.encodeNode,r=s.encodeU32;export default s;export{o as __esModule,m as encodeNode,r as encodeU32};

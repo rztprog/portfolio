@@ -1,2 +1,0 @@
-import e from"./Hook.js";import o from"./HookCodeFactory.js";var r={};const t=e;const s=o;class AsyncSeriesHookCodeFactory extends s{content({onError:e,onDone:o}){return this.callTapsSeries({onError:(o,r,t,s)=>e(r)+s(true),onDone:o})}}const n=new AsyncSeriesHookCodeFactory;class AsyncSeriesHook extends t{compile(e){n.setup(this,e);return n.create(e)}}Object.defineProperties(AsyncSeriesHook.prototype,{_call:{value:void 0,configurable:true,writable:true}});r=AsyncSeriesHook;var c=r;export default c;
-

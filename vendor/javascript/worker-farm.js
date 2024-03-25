@@ -1,2 +1,0 @@
-import"os";import"child_process";import r from"process";import e from"./farm.js";import"errno";var n={};var o=r;const t=e;let f=[];function farm(r,e,n){if("string"==typeof r){n=e;e=r;r={}}let o=new t(r,e),i=o.setup(n);f.push({farm:o,api:i});return i}function end(r,e){for(let n=0;n<f.length;n++)if(f[n]&&f[n].api===r)return f[n].farm.end(e);o.nextTick(e.bind(null,new Error("Worker farm not found!")))}n=farm;n.end=end;var i=n;const p=n.end;export default i;export{p as end};
-

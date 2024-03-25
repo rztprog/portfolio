@@ -1,2 +1,0 @@
-import n from"bluebird";var t={};t=inflight;let i;try{i=n}catch(n){i=Promise}const r={};inflight.active=r;function inflight(n,t){return i.all([n,t]).then((function(n){const t=n[0];const r=n[1];return Array.isArray(t)?i.all(t).then((function(n){return _inflight(n.join(""),r)})):_inflight(t,r)}));function _inflight(n,t){if(!r[n]){r[n]=new i((function(n){return n(t())}));r[n].then(cleanup,cleanup);function cleanup(){delete r[n]}}return r[n]}}var e=t;export default e;
-
