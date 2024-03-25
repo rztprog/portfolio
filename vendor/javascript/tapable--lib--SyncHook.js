@@ -1,0 +1,2 @@
+import o from"./Hook.js";import r from"./HookCodeFactory.js";var t={};const e=o;const n=r;class SyncHookCodeFactory extends n{content({onError:o,onDone:r,rethrowIfPossible:t}){return this.callTapsSeries({onError:(r,t)=>o(t),onDone:r,rethrowIfPossible:t})}}const s=new SyncHookCodeFactory;class SyncHook extends e{tapAsync(){throw new Error("tapAsync is not supported on a SyncHook")}tapPromise(){throw new Error("tapPromise is not supported on a SyncHook")}compile(o){s.setup(this,o);return s.create(o)}}t=SyncHook;var c=t;export default c;
+

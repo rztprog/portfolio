@@ -1,0 +1,2 @@
+import o from"path";import r from"commondir";import t from"pkg-dir";import e from"make-dir";import m from"process";var n={};var c=m;const i=o;const s=r;const f=t;const a=e;n=(o={})=>{const{name:r}=o;let t=o.cwd;t=o.files?s(t,o.files):t||c.cwd();t=f.sync(t);if(t){t=i.join(t,"node_modules",".cache",r);t&&o.create&&a.sync(t);if(o.thunk)return(...o)=>i.join(t,...o)}return t};var p=n;export default p;
+

@@ -1,0 +1,25 @@
+import t from"fs";import r from"stream";import e from"path";import s from"util";import i from"picomatch";import o from"process";var n={};var a=o;const h=t;const{Readable:c}=r;const l=e;const{promisify:p}=s;const d=i;const f=p(h.readdir);const u=p(h.stat);const y=p(h.lstat);const m=p(h.realpath);
+/**
+ * @typedef {Object} EntryInfo
+ * @property {String} path
+ * @property {String} fullPath
+ * @property {fs.Stats=} stats
+ * @property {fs.Dirent=} dirent
+ * @property {String} basename
+ */const _="!";const w="READDIRP_RECURSIVE_ERROR";const E=new Set(["ENOENT","EPERM","EACCES","ELOOP",w]);const g="files";const D="directories";const b="files_directories";const F="all";const R=[g,D,b,F];const isNormalFlowError=t=>E.has(t.code);const[v,P]=a.versions.node.split(".").slice(0,2).map((t=>Number.parseInt(t,10)));const S="win32"===a.platform&&(v>10||10===v&&P>=5);const normalizeFilter=t=>{if(void 0!==t){if("function"===typeof t)return t;if("string"===typeof t){const r=d(t.trim());return t=>r(t.basename)}if(Array.isArray(t)){const r=[];const e=[];for(const s of t){const t=s.trim();t.charAt(0)===_?e.push(d(t.slice(1))):r.push(d(t))}return e.length>0?r.length>0?t=>r.some((r=>r(t.basename)))&&!e.some((r=>r(t.basename))):t=>!e.some((r=>r(t.basename))):t=>r.some((r=>r(t.basename)))}}};class ReaddirpStream extends c{static get defaultOptions(){return{root:".",fileFilter:t=>true,directoryFilter:t=>true,type:g,lstat:false,depth:2147483648,alwaysStat:false}}constructor(t={}){super({objectMode:true,autoDestroy:true,highWaterMark:t.highWaterMark||4096});const r={...ReaddirpStream.defaultOptions,...t};const{root:e,type:s}=r;this._fileFilter=normalizeFilter(r.fileFilter);this._directoryFilter=normalizeFilter(r.directoryFilter);const i=r.lstat?y:u;this._stat=S?t=>i(t,{bigint:true}):i;this._maxDepth=r.depth;this._wantsDir=[D,b,F].includes(s);this._wantsFile=[g,b,F].includes(s);this._wantsEverything=s===F;this._root=l.resolve(e);this._isDirent="Dirent"in h&&!r.alwaysStat;this._statsProp=this._isDirent?"dirent":"stats";this._rdOptions={encoding:"utf8",withFileTypes:this._isDirent};this.parents=[this._exploreDir(e,1)];this.reading=false;this.parent=void 0}async _read(t){if(!this.reading){this.reading=true;try{while(!this.destroyed&&t>0){const{path:r,depth:e,files:s=[]}=this.parent||{};if(s.length>0){const i=s.splice(0,t).map((t=>this._formatEntry(t,r)));for(const r of await Promise.all(i)){if(this.destroyed)return;const s=await this._getEntryType(r);if("directory"===s&&this._directoryFilter(r)){e<=this._maxDepth&&this.parents.push(this._exploreDir(r.fullPath,e+1));if(this._wantsDir){this.push(r);t--}}else if(("file"===s||this._includeAsFile(r))&&this._fileFilter(r)&&this._wantsFile){this.push(r);t--}}}else{const t=this.parents.pop();if(!t){this.push(null);break}this.parent=await t;if(this.destroyed)return}}}catch(t){this.destroy(t)}finally{this.reading=false}}}async _exploreDir(t,r){let e;try{e=await f(t,this._rdOptions)}catch(t){this._onError(t)}return{files:e,depth:r,path:t}}async _formatEntry(t,r){let e;try{const s=this._isDirent?t.name:t;const i=l.resolve(l.join(r,s));e={path:l.relative(this._root,i),fullPath:i,basename:s};e[this._statsProp]=this._isDirent?t:await this._stat(i)}catch(t){this._onError(t)}return e}_onError(t){isNormalFlowError(t)&&!this.destroyed?this.emit("warn",t):this.destroy(t)}async _getEntryType(t){const r=t&&t[this._statsProp];if(r){if(r.isFile())return"file";if(r.isDirectory())return"directory";if(r&&r.isSymbolicLink()){const r=t.fullPath;try{const t=await m(r);const e=await y(t);if(e.isFile())return"file";if(e.isDirectory()){const e=t.length;if(r.startsWith(t)&&r.substr(e,1)===l.sep){const e=new Error(`Circular symlink detected: "${r}" points to "${t}"`);e.code=w;return this._onError(e)}return"directory"}}catch(t){this._onError(t)}}}}_includeAsFile(t){const r=t&&t[this._statsProp];return r&&this._wantsEverything&&!r.isDirectory()}}
+/**
+ * @typedef {Object} ReaddirpArguments
+ * @property {Function=} fileFilter
+ * @property {Function=} directoryFilter
+ * @property {String=} type
+ * @property {Number=} depth
+ * @property {String=} root
+ * @property {Boolean=} lstat
+ * @property {Boolean=} bigint
+ */
+/**
+ * Main function which ends up calling readdirRec and reads all files and directories in given root recursively.
+ * @param {String} root Root directory
+ * @param {ReaddirpArguments=} options Options to specify root (start directory), filters and recursion depth
+ */const readdirp=(t,r={})=>{let e=r.entryType||r.type;"both"===e&&(e=b);e&&(r.type=e);if(!t)throw new Error("readdirp: root argument is required. Usage: readdirp(root, options)");if("string"!==typeof t)throw new TypeError("readdirp: root argument must be a string. Usage: readdirp(root, options)");if(e&&!R.includes(e))throw new Error(`readdirp: Invalid type passed. Use one of ${R.join(", ")}`);r.root=t;return new ReaddirpStream(r)};const readdirpPromise=(t,r={})=>new Promise(((e,s)=>{const i=[];readdirp(t,r).on("data",(t=>i.push(t))).on("end",(()=>e(i))).on("error",(t=>s(t)))}));readdirp.promise=readdirpPromise;readdirp.ReaddirpStream=ReaddirpStream;readdirp.default=readdirp;n=readdirp;var O=n;export default O;
+

@@ -1,0 +1,2 @@
+import e from"graceful-fs";var r={};const t=e;class NodeJsInputFileSystem{readdir(e,r){t.readdir(e,((e,t)=>{r(e,t&&t.map((e=>e.normalize?e.normalize("NFC"):e)))}))}readdirSync(e){const r=t.readdirSync(e);return r&&r.map((e=>e.normalize?e.normalize("NFC"):e))}}const a=["stat","statSync","readFile","readFileSync","readlink","readlinkSync"];for(const e of a)Object.defineProperty(NodeJsInputFileSystem.prototype,e,{configurable:true,writable:true,value:t[e].bind(t)});r=NodeJsInputFileSystem;var n=r;export default n;
+

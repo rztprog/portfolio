@@ -1,0 +1,11 @@
+<div class="container">
+  <section class="blog-header">
+      <p><%= @blog.title %></p>
+  </section>
+  <div class="credit">
+    <p>By USER posted <%= @blog.created_at %></p>
+  </div>
+  <article class="blog-post">
+    <%= @blog.post %>
+  </article>
+</div>

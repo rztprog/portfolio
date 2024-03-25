@@ -14,9 +14,11 @@
  *= require_self
  */
  /* My CSS Partials */
+@import "font-awesome";
 @import "config/*";
 @import "components/*";
 @import "pages/*";
+@import "blogs";
 // @import "pages";
 // @import "blogs";
 // @import "contacts";
