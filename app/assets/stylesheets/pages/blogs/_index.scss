@@ -4,7 +4,6 @@
     color: white;
 }
 
-// Index
 .blogs-grid-index{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -96,33 +95,3 @@
     .blogs-part{
     display: flex;
 }
-
-// Show
-.blog-header,
-.credit,
-.blog-post{
-    padding: 5px;
-}
-
-.blog-header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 3rem;
-    height: 250px;
-    background-color: #ffffff11;
-    
-}
-
-.credit{
-    color: rgb(138, 138, 138);
-    font-size: 0.8rem;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.blog-post{
-    margin-top: 30px;
-}
-
-
