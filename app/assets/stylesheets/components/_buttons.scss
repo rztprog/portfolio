@@ -1,0 +1,19 @@
+.createButton,
+.imageButton{
+    position: relative;
+    left: 20%;
+}
+
+.createButton,
+input[type="file"]{
+    color: white;
+    padding: 12px 24px;
+    background: #D34148;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover{
+        background: #350000;
+    }
+}

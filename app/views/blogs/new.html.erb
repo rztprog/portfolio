@@ -1,15 +1,14 @@
-<div class="container newList">
+<div class="container">
   <h1>New article</h1>
 
   <%= simple_form_for(@blog) do |f| %>
-    <%= f.input :title %>
+    <%= f.input :title, label: "Article title", placeholder: "Ex: A new feature in Rails" %>
     <br>
-    <%= f.input :post %>
+    <%= f.input :image, as: :file, class: "imageButton", label: "Article image" %>
     <br>
-    <%= f.input :image, as: :file %>
+    <%= f.input :post, as: :text, label: "Article content", placeholder: "Ex: Describe this new feature" %>
     <br>
-    <%= f.button :submit, "Create new article", class: "btn btn-primary mt-2" %>
+    <%= f.button :submit, "Create", class: "createButton" %>
   <% end %>
 
-  </div>
 </div>
