@@ -16,7 +16,11 @@
         <div class="blogs-card-border">
           <div class="blogs-card">
             <p><%= blog.title %></p>
-
+            <span>
+              <%= link_to edit_blog_path(blog), class: "edit-blog" do %>
+                <i class="fa-regular fa-pen-to-square"></i>
+              <% end %>
+            </span>
           </div>
         </div>
       <% end %>
