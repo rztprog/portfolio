@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Edit article</h1>
+
+  <%= simple_form_for(@blog) do |f| %>
+    <%= f.input :title, label: "Article title", placeholder: "Ex: A new feature in Rails" %>
+    <br>
+    <%= f.input :image, as: :file, class: "imageButton", label: "Article image" %>
+    <br>
+    <%= f.input :post, as: :text, label: "Article content", placeholder: "Ex: Describe this new feature" %>
+    <br>
+    <%= f.button :submit, "Create", class: "createButton" %>
+  <% end %>
+
+</div>
