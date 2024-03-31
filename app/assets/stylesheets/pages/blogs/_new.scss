@@ -27,8 +27,11 @@ input.string{
 }
 
 textarea.text {
-    
     min-height: 500px;
     border: 2px solid #ccc;
+}
 
+.blog-buttons-container-form{
+    position: relative;
+    left: 20%;
 }

@@ -1,9 +1,12 @@
 class BlogsController < ApplicationController
-    before_action :set_blog, only: [:show]
+    before_action :set_blog, only: [:show, :edit, :update]
 
     def index
         @blogs = Blog.all
         # faire un triage par plus récent
+    end
+
+    def show
     end
 
     def new
@@ -21,6 +24,11 @@ class BlogsController < ApplicationController
         else
             render :new
         end
+    end
+
+    def update
+        @blog.update(blog_params)
+        redirect_to blog_path(@blog)
     end
 
     private

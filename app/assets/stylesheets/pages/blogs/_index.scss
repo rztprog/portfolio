@@ -3,10 +3,10 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 15px 15px;
     color: black;
+}
 
-    a{
-        text-decoration: none;
-    }
+.blog-card-container{
+    position: relative;
 }
 
 // I use another parent div to simulate a border with clip-path
@@ -19,7 +19,7 @@
     align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
-    color: cyan;
+    color: #5DF5FF;
 
     &:hover{
         background-color: #5DF5FF;
@@ -35,7 +35,7 @@
     align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
-    color: cyan;
+    color: #5DF5FF;
 }
 
 .blogs-nav{
@@ -43,21 +43,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-}
-
-.add-blogs-button{
-    background-color: lightgray;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: #000;
-    border: 1px solid #350000;
-
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
+    height: 38px;
 }
 
 .search-blogs-form{
     display: flex;
+    height: 100%;
 
     input{
         background: rgba($color: black, $alpha: 0);
@@ -71,21 +62,19 @@
     }
 }
 
-.search-blogs-button{
-    width: 46px;
-    height: 36px;
-    border: 1px solid #D34148;
-    background: #D34148;
-    color: #000;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 15px;
-
-    &:hover{
-        font-size: 20px;
-    }
-    }
-
-    .blogs-part{
+.edit-blog{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba($color: #fff, $alpha: 0.0);
+    top: 5px;
+    left: 5px;
+    color: white;
+    z-index: 1;
+
+    &:hover {
+        color: #5DF5FF;
+
+    }
 }
