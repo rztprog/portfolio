@@ -3,10 +3,11 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 15px 15px;
     color: black;
+}
 
-    a{
-        text-decoration: none;
-    }
+.blog-card-container{
+    text-decoration: none;
+    position: relative;
 }
 
 // I use another parent div to simulate a border with clip-path
@@ -19,7 +20,7 @@
     align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
-    color: cyan;
+    color: #5DF5FF;
 
     &:hover{
         background-color: #5DF5FF;
@@ -35,7 +36,7 @@
     align-items: center;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 95% 100%, 0 100%);
-    color: cyan;
+    color: #5DF5FF;
 }
 
 .blogs-nav{
@@ -91,5 +92,18 @@
 }
 
 .edit-blog{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba($color: #fff, $alpha: 0.0);
+    top: 5px;
+    left: 5px;
+    color: white;
+    z-index: 1;
+
+    &:hover {
+        color: #5DF5FF;
+
+    }
 }
