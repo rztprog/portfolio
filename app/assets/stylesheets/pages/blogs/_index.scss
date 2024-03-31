@@ -44,21 +44,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-}
-
-.add-blogs-button{
-    background-color: lightgray;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: #000;
-    border: 1px solid #350000;
-
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0 100%);
+    height: 38px;
 }
 
 .search-blogs-form{
     display: flex;
+    height: 100%;
 
     input{
         background: rgba($color: black, $alpha: 0);
@@ -70,25 +61,6 @@
         padding: 5px;
         color: lightgray;
     }
-}
-
-.search-blogs-button{
-    width: 46px;
-    height: 36px;
-    border: 1px solid #D34148;
-    background: #D34148;
-    color: #000;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 15px;
-
-    &:hover{
-        font-size: 20px;
-    }
-    }
-
-    .blogs-part{
-    display: flex;
 }
 
 .edit-blog{

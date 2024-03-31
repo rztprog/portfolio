@@ -7,7 +7,12 @@
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
-    <%= link_to "+ADD", new_blog_path, class: "add-blogs-button" %>
+    <div class="blog-button">
+      <%= link_to new_blog_path do %>
+        <i class="fa-solid fa-plus"></i>
+        <span>ADD</span>
+      <% end %>
+    </div>
   </div>
 
   <div class="blogs-grid-index">
