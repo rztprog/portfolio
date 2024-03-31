@@ -1,4 +1,16 @@
 <div class="container">
+  <div class="blog-buttons-container">
+    <div class="blog-button">
+      <%= link_to blogs_path do %>
+        <i class="fa-solid fa-angles-left"></i> Retour
+      <% end %>
+    </div>
+    <div class="blog-button">
+      <%= link_to edit_blog_path(@blog) do %>
+        <i class="fa-regular fa-pen-to-square"></i> Edit
+      <% end %>
+    </div>
+  </div>
   <section class="blog-header">
       <p><%= @blog.title %></p>
   </section>
