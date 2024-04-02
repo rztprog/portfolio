@@ -66,3 +66,4 @@ pin "wrappy" # @1.0.2
 pin "y18n" # @4.0.3
 pin "yargs" # @12.0.5
 pin "yargs-parser" # @11.1.1
+pin "@fortawesome/fontawesome-free", to: "@fortawesome--fontawesome-free.js" # @6.5.1
