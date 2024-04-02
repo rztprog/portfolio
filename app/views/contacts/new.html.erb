@@ -1,0 +1,45 @@
+<div class="contact-container">
+  <h1>Contact me on</h1>
+
+  <ul class="social-list">
+    <li class="social-contact"><a class="social-contact-link" href="https://twitter.com/rztprog"><i class="fab fa-twitter"></i></a></li>
+    <li class="social-contact"><a class="social-contact-link" href="https://github.com/rztprog"><i class="fab fa-github"></i></a></li>
+    <li class="social-contact"><a class="social-contact-link" href="mailto:rztprog@outlook.fr"><i class='fas fa-envelope'></i></a></li>
+  </ul>
+
+  <h2 class="social-h2">OR</h2>
+
+  <% flash.each do |key, message| %>
+    <p class="alert-contact alert-<%= key %>"><%= message %></p>
+  <% end %>
+
+  <%= form_for @contact do |f| %>
+    <ul class="contact-form-list">
+      <li class="input-wrapper">
+        <!-- <%= f.label :name %> -->
+        <%= f.text_field  :name, required: true, class: "contact-form-field", 
+                          placeholder: "Name" %>      
+      </li>
+
+      <li class="input-wrapper">
+      <!-- <%= f.label :email %> -->
+      <%= f.text_field :email, required: true, class: "contact-form-field",  
+                        placeholder: "Email"%>
+      </li>
+
+      <li class="input-wrapper-textarea">
+      <!-- <%= f.label :message %> -->
+      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-field", 
+                      placeholder: "Message"%>
+      </li>
+
+      <!-- Anti B0ts -->
+      <div class= "b0t-display">
+        <%= f.label :nickname %>
+        <%= f.text_field :nickname, :hint => 'An71B07' %>
+      </div>
+
+      <%= f.submit 'Send', class: 'send-button' %>
+    </div>
+  <% end %>
+</div>

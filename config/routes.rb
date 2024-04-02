@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   root to: "pages#index"
   resources :blogs, only: [:index, :show, :create, :new, :edit, :update, :destroy]
+  resources :contacts, only: [:new, :create]
 
 end
