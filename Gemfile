@@ -12,7 +12,6 @@ gem 'mail_form', '~> 1.10', '>= 1.10.1'
 gem 'dartsass-rails', '~> 0.5.0' # Mieux que sass-rails
 gem 'sass-embedded', '~> 1.72' # Fonctionne de pair avec dartsass-rails
 
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1', '>= 7.1.3.2'
 
