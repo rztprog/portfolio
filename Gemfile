@@ -8,8 +8,9 @@ gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3'
 gem 'mini_racer', '~> 0.8.0' # Moteur JS
 gem 'simple_form', '~> 5.3'
 gem 'mail_form', '~> 1.10', '>= 1.10.1'
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'dartsass-rails', '~> 0.5.0' # Mieux que sass-rails
-gem 'sass-embedded', '~> 1.72' # Fonctionne de pair avec dartsass-rails
+gem 'sassc-embedded', '~> 1.74', '>= 1.74.1' # Fonctionne de pair avec dartsass-rails
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1', '>= 7.1.3.2'
