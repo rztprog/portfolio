@@ -2,16 +2,18 @@
     display: none;
 }
 
-.social-h2,
-.social-list{
-    margin-top: 30px;
-}
-
 .contact-container{
     color: #fff;
     margin: 30px auto 0 auto;
     width: 600px;
     text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.social-h2,
+.social-list{
+    margin-top: 30px;
 }
 
 .social-list{
@@ -20,10 +22,14 @@
 }
 
 .social-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     background-color: #350000;
-    width: 80px;
-    // aspect-ratio: 1 / 1;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
 
     &:hover{
@@ -35,25 +41,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: #5DF5FF;
     font-size: 25px;
-}
-
-.send-button{
-    cursor: pointer;
-    background-color: #350000;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    font-weight: bold;
-    align-self: flex-end;
-
-    &:hover{
-        background-color: #D34148;
-    }
 }
 
 .contact-form-list{
@@ -61,7 +53,6 @@
     flex-direction: column;
     height: 100%;
     box-sizing: border-box;
-    // justify-content: space-between;
 }
 
 .send-button,

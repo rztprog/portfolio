@@ -80,3 +80,17 @@ input[type="file"]{
     .blogs-part{
     display: flex;
 }
+
+.send-button{
+    cursor: pointer;
+    background-color: #350000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    align-self: flex-end;
+
+    &:hover{
+        background-color: rgba($color: #5DF5FF, $alpha: 0.5);
+    }
+}
