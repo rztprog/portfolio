@@ -36,3 +36,6 @@
 
 # My ignored
 /vendor/javascript/*
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
