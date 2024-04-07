@@ -14,21 +14,20 @@
       <% end %>
     </div>
   </div>
-
   <div class="blogs-grid-index">
     <% @blogs.each do |blog| %>
-    <div class="blog-card-container">
-      <%= link_to edit_blog_path(blog), class: "edit-blog" do %>
-        <i class="fa-regular fa-pen-to-square"></i>
-      <% end %>
-      <%= link_to blog_path(blog) do %>
-        <div class="blogs-card-border">
-          <div class="blogs-card">
-            <p><%= blog.title %></p>
+      <div class="blog-card-container">
+        <%= link_to edit_blog_path(blog), class: "edit-blog" do %>
+          <i class="fa-regular fa-pen-to-square"></i>
+        <% end %>
+        <%= link_to blog_path(blog) do %>
+          <div class="blogs-card-border">
+            <div class="blogs-card">
+              <p><%= blog.title %></p>
+            </div>
           </div>
-        </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>
