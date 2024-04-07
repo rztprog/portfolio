@@ -76,3 +76,4 @@ gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'dartsass-rails', '~> 0.5.0' # Mieux que sass-rails
 gem 'sassc-embedded', '~> 1.74', '>= 1.74.1' # Fonctionne de pair avec dartsass-rails
 gem "tailwindcss-rails", "~> 2.3"
+gem 'foreman', '~> 0.87.2'

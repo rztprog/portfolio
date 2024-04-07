@@ -67,3 +67,5 @@ pin "y18n" # @4.0.3
 pin "yargs" # @12.0.5
 pin "yargs-parser" # @11.1.1
 pin "@fortawesome/fontawesome-free", to: "@fortawesome--fontawesome-free.js" # @6.5.1
+pin "flowbite" # @2.3.0
+pin "@popperjs/core", to: "@popperjs--core.js" # @2.11.8
