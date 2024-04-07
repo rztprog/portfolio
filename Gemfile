@@ -67,14 +67,13 @@ group :test do
 end
 
 # My Gem
-gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.16.0'
-gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3'
+gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.16.0' # Prefixes vendeurs CSS (Can i use)
+gem "tailwindcss-rails", "~> 2.3" # Framework css
+gem 'foreman', '~> 0.87.2' # Gerer plusieurs processus serveur simultanement
+gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3' 
 gem 'mini_racer', '~> 0.8.0' # Moteur JS
 gem 'simple_form', '~> 5.3'
 gem 'mail_form', '~> 1.10', '>= 1.10.1'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'dartsass-rails', '~> 0.5.0'
-gem 'sassc-embedded', '~> 1.74', '>= 1.74.1' # Fonctionne de pair avec dartsass-rails
-gem "tailwindcss-rails", "~> 2.3"
-gem 'foreman', '~> 0.87.2'
 gem 'font-awesome-sass', '~> 6.5', '>= 6.5.2'
