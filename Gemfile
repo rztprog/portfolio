@@ -76,5 +76,5 @@ gem 'simple_form', '~> 5.3'
 gem 'mail_form', '~> 1.10', '>= 1.10.1' 
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'dartsass-rails', '~> 0.5.0'
-# gem 'font-awesome-sass', '~> 6.5', '>= 6.5.2'
+gem 'font-awesome-sass', '~> 6.5', '>= 6.5.2' # Pack d'icones Fontawesome
 gem 'jsbundling-rails', '~> 1.3'

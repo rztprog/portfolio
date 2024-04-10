@@ -108,6 +108,8 @@ GEM
     erubi (1.12.0)
     execjs (2.9.1)
     ffi (1.16.3)
+    font-awesome-sass (6.5.2)
+      sassc (~> 2.0)
     foreman (0.87.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -329,6 +331,7 @@ DEPENDENCIES
   capybara
   dartsass-rails (~> 0.5.0)
   debug
+  font-awesome-sass (~> 6.5, >= 6.5.2)
   foreman (~> 0.87.2)
   htmlbeautifier (~> 1.4, >= 1.4.3)
   jbuilder
