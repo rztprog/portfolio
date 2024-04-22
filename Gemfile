@@ -2,15 +2,6 @@ source "https://rubygems.org"
 
 ruby "3.3.0"
 
-# My Gem
-gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.16.0'
-gem 'font-awesome-sass', '~> 6.5', '>= 6.5.1'
-gem 'sass-rails', '~> 6.0'
-gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3'
-gem 'mini_racer', '~> 0.8.0' # Moteur JS
-gem 'simple_form', '~> 5.3'
-# gem 'dartsass-rails', '~> 0.5.0'
-
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1', '>= 7.1.3.2'
 
@@ -24,7 +15,7 @@ gem 'sqlite3', '~> 1.7', '>= 1.7.3'
 gem 'puma', '~> 6.4', '>= 6.4.2'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+# gem "importmap-rails"
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
@@ -36,7 +27,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", ">= 4.0.1"
+gem "redis", ">= 4.0.1"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -74,3 +65,16 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# My Gem
+gem 'autoprefixer-rails', '~> 10.4', '>= 10.4.16.0' # Prefixes vendeurs CSS (Can i use)
+gem "tailwindcss-rails", "~> 2.3" # Framework css
+gem 'foreman', '~> 0.87.2' # Gerer plusieurs processus serveur simultanement
+gem 'htmlbeautifier', '~> 1.4', '>= 1.4.3' # Indente Les fichier ERB (Installer ERB Formatter sur VSCODE)
+gem 'mini_racer', '~> 0.8.0' # Moteur JS
+gem 'simple_form', '~> 5.3' 
+gem 'mail_form', '~> 1.10', '>= 1.10.1' 
+gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
+gem 'dartsass-rails', '~> 0.5.0'
+gem 'font-awesome-sass', '~> 6.5', '>= 6.5.2' # Pack d'icones Fontawesome
+gem 'jsbundling-rails', '~> 1.3'

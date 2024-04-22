@@ -1,6 +1,5 @@
 <div class="container">
   <h1>New article</h1>
-
   <div class="blog-buttons-container blog-buttons-container-form">
     <div class="blog-button">
       <%= link_to blogs_path do %>
@@ -8,7 +7,6 @@
       <% end %>
     </div>
   </div>
-
   <%= simple_form_for(@blog) do |f| %>
     <%= f.input :title, label: "Article title", placeholder: "Ex: A new feature in Rails" %>
     <br>
@@ -18,5 +16,4 @@
     <br>
     <%= f.button :submit, "Create", class: "createButton" %>
   <% end %>
-
 </div>

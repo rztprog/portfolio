@@ -13,7 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
 @import "font-awesome";
-@import "config/*";
-@import "components/*";
-@import "pages/*";
+@import "config";
+@import "components";
+@import "pages";

@@ -3,7 +3,7 @@
     <li><%= link_to "ROOT", root_path %></li>
     <li><%= link_to "WORK", root_path %></li>
     <li><%= link_to "BLOG", blogs_path, class: "#{'current-list' if controller_name == 'blogs'}" %></li>
-    <li><%= link_to "CONTACT", root_path %></li>
+    <li><%= link_to "CONTACT", new_contact_path, class: "#{'current-list' if controller_name == 'contacts'}" %></li>
   </ul>
   <div class="redline"></div>
 </nav>
